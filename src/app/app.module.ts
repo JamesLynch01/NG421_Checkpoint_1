@@ -9,6 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 import {RouterModule } from '@angular/router';
 import { BoardComponent } from './board/board.component';
+import { ToDoEditComponent } from './to-do-edit/to-do-edit.component';
 
 const routes = [];
 const appRoutes = RouterModule.forRoot(routes);
@@ -20,7 +21,8 @@ const appRoutes = RouterModule.forRoot(routes);
     TodoListComponent,
     CreateTodoComponent,
     ConfirmationModalComponent,
-    BoardComponent
+    BoardComponent,
+    ToDoEditComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,6 @@ const appRoutes = RouterModule.forRoot(routes);
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ConfirmationModalComponent]
+  entryComponents: [ConfirmationModalComponent, ToDoEditComponent]
 })
 export class AppModule { }
